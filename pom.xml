@@ -17,7 +17,7 @@
     <description>Automation testing framework for API</description>
 
     <properties>
-        <cucumber.version>7.17.0</cucumber.version>
+        <cucumber.version>7.2.0</cucumber.version>
     </properties>
 
     <dependencies>
@@ -53,6 +53,14 @@
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
         </dependency>
+        <dependency>
+            <groupId>me.jvt.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+
+
 
         <dependency>
             <groupId>org.projectlombok</groupId>

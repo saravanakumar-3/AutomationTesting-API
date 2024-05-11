@@ -7,5 +7,6 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "src/main/resources/features/Sample.feature",
-    glue = {"com.test.automation.api.steps"})
+    glue = {"com.test.automation.api.steps"},
+    plugin = {"me.jvt.cucumber.report.PrettyReports:target"})
 public class TestRunner {}

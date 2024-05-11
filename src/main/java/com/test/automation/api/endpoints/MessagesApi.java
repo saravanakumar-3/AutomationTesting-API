@@ -2,7 +2,7 @@ package com.test.automation.api.endpoints;
 
 import static io.restassured.RestAssured.given;
 
-import io.cucumber.core.internal.com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
 import java.util.Base64;
 import java.util.Map;
