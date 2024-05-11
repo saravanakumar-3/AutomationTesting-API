@@ -8,6 +8,7 @@ class AutomationTestingApiApplicationTests {
 
 	@Test
 	void contextLoads() {
+    System.out.println("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF");
 	}
 
 }

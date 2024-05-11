@@ -1,1 +1,7 @@
-spring.application.name: AutomationTesting-API
+spring:
+  application:
+    name: AutomationTesting-API
+logging:
+  level:
+    root: ERROR
+    com.test.automation.api: INFO

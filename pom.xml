@@ -12,8 +12,13 @@
     <groupId>com.test</groupId>
     <artifactId>AutomationTesting-API</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <name>AutomationTesting-API</name>
     <description>Automation testing framework for API</description>
+
+    <properties>
+        <cucumber.version>7.17.0</cucumber.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -23,7 +28,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -33,7 +37,21 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.17.0</version>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-spring</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
         </dependency>
 
         <dependency>
@@ -74,7 +92,11 @@
                     <target>11</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
         </plugins>
+        <testSourceDirectory>src/main/java</testSourceDirectory>
     </build>
-
 </project>
